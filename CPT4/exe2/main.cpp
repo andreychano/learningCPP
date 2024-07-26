@@ -1,4 +1,4 @@
-//Напишите программу которая запрашивает и отображает информацию, как показано в следующем примере ввода
+//Напишите программу, используя string, которая запрашивает и отображает информацию, как показано в следующем примере ввода
 // What is your first name? Bety Sue
 // What is your last name? Yewe
 // What letter grade do you deserve? B
@@ -11,20 +11,19 @@
 // Программа должна уменьшать grade на одну градацию.Предполагается, что пользователь может ввести только A, B или C.
 
 #include <iostream>
-
-const int ArrSize = 20;
+#include <string>
 
 int main(){
 
     std::cout<< "What is your first name? ";
-    char firstName[ArrSize];
-    std::cin.getline(firstName,ArrSize);
+    std::string firstName;
+    std::getline(std::cin, firstName);
     std::cout<<std::endl;
 
 
     std::cout<< "What is your last name? ";
-    char lastName[ArrSize];
-    std::cin.getline(lastName,ArrSize);
+    std::string lastName;
+    std::getline(std::cin, lastName);
     std::cout<<std::endl;
 
     std::cout<< "What letter grade do you deserve? ";
