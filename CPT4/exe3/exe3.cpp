@@ -17,9 +17,9 @@ int main() {
 		char fullName[50];
 		char comma[3] = ", ";
 
-		strcpy_s(fullName, firstName);
-		strcat_s(fullName, comma);
-		strcat_s(fullName, lastName);
+		strcpy(fullName, firstName);
+		strcat(fullName, comma);
+		strcat(fullName, lastName);
 
 		cout << endl << fullName;
 }
