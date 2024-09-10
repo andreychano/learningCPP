@@ -1,4 +1,4 @@
-ч﻿
+
 #include <iostream>
 #include <string>
 
